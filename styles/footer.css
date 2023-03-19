@@ -1,0 +1,33 @@
+footer{
+    position: relative;
+    min-height: 20em;
+}
+
+.nav2 {
+    background-color:#823772;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav2 .logo2 {
+    width:fit-content;
+    margin: 0 auto;
+}
+
+.nav2 .logo2 img{
+    width: 5em;
+    height: 5em; 
+}
+
+.nav2 .redes{
+    display: flex;
+    justify-content: center;
+    gap:3em  
+}
+
+.nav2 .copyright{
+    left: 1em;
+}

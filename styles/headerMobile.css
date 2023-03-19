@@ -1,0 +1,75 @@
+
+.nav{
+    background-color: #823772;
+    height: 4em;
+    color:#823772;
+}
+
+.nav .logo img{
+    width: 4.5em;
+    height: 4.5em;
+    position: relative;
+}
+
+.navConteiner{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu{
+    display: none;
+}
+
+.icons{
+    margin-left: 0;
+    gap: .3em;
+}
+
+@media (min-width: 700px){
+
+    .nav .logo img{
+        width: 6.5em;
+        height: 6.5em;
+        position: absolute;
+        left: 1em;
+        top:-1.3em;
+    }
+
+    .nav_menu{
+        display: flex;
+        align-items: center;
+        margin: 0em auto;
+        gap: 1em;
+    }
+    
+    .nav_item {
+        color: #fcf9ce;
+        text-decoration: none;
+        font-size: 20px;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    
+    .nav_item::after{
+        content: "";
+        display: block;
+        background: #fcf9ce;
+        width: 90%;
+        margin-top: 3px;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: clip-path 1.5s;
+    }
+    
+    .nav_item:hover{
+        --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .burger{
+        display: none;
+    }
+   
+}
